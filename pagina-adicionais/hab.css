@@ -1,0 +1,82 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+@media (min-width: 600px){
+    .background{
+        height: 100vh;
+        background-color: brown;
+    }
+}
+
+.background {
+    background: linear-gradient(to right, rgb(2, 17, 32), rgb(37, 72, 114),rgb(2, 17, 32));
+    background-size: 300% 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h6{
+    color: rgb(1, 1, 1);
+}
+
+h1{
+    color: rgb(244, 244, 244);
+    font-style: unset;
+    font: caption;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(4, 4, 19)!important;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 25px;
+    border: 1px solid white;
+    margin: 20px;
+   
+}
+
+#col1, #col2, #col3, #col4, #col5, #col6 {
+    background-color: aliceblue;
+    margin-left: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.col-xs-12:hover {
+    box-shadow: 0 0 10px #415f7f, 0 0 40px #2d5bb3, 0 0 70px #296f98;
+    animation: balanca 1.5s alternate ease-in-out;
+}
+
+@keyframes balanca{
+    0% {margin-right: 0;}
+    25% {margin-right: 5px;}
+    50% {margin-right: 0;}
+    75% {margin-right: 5px;}
+    100% {margin-right: 0;}
+   
+}

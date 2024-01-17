@@ -1,0 +1,204 @@
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.background{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+h6{
+    color: rgb(1, 1, 1);
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(4, 4, 19);
+    width: 99%;
+    height: 95%;
+    border-radius: 10px;
+    padding: 25px;
+    border: 1px solid rgb(28, 97, 153);
+    margin: 0 auto; /* Adicionei esta linha para centralizar a div */
+ 
+}
+
+.col-xs-12,.col-md-4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#diveu{
+    margin-bottom: 40%;
+}
+
+img#eu{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto; 
+    box-shadow: 3px 2px 3px 2px rgb(7, 102, 140);
+    margin-bottom: 5px;
+}
+
+#ana{
+    text-align: center;
+    color: white;
+    
+    text-transform: uppercase;
+}
+
+.texto-animado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.texto-animado
+.estatico,.dinamico{
+    text-transform: uppercase;
+}
+
+.texto-animado.estatico{
+    color: white;
+}
+.texto-animado.dinamico{
+    color: rgb(26, 98, 174);
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.dinamico li{
+    margin-right: 20px;
+    list-style: none;
+    color: rgba(0, 132, 255, 0.929);
+    text-align: center;
+    margin-bottom: 30%;
+}
+
+.dinamico li span {
+    position: relative;
+}
+
+.dinamico li span ::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid rgba(0, 132, 255, 0.929);
+    animation: digita 1.4s steps(10) infinite;
+    background-color: rgb(4, 4, 19);
+
+}
+
+@keyframes digita {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.col-xs-12.col-md-4.sobre{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+   flex-direction: row;
+   
+}
+
+.col-xs-12 .col-md-4.sobreconteudo{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.col-xs-12.col-md-4.conteudo1,
+.col-xs-12.col-md-4.conteudo2,
+.col-xs-12.col-md-4.conteudo3,
+.col-xs-12.col-md-4.conteudo4{
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 200px;
+    background: linear-gradient(to left, rgb(7, 38, 96), rgb(20, 82, 182), rgb(54, 109, 155));
+    padding: 18px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+
+h6{
+    color: white;
+}
+
+#paragrafo{
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:800px){
+    .col-xs-12 .col-md-4.sobreconteudo{flex-direction: column; }
+    .col-xs-12.col-md-4.conteudo1,
+    .col-xs-12.col-md-4.conteudo2,
+    .col-xs-12.col-md-4.conteudo3,
+    .col-xs-12.col-md-4.conteudo4{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .col-xs-12.col-md-4.imagem{
+       width: 100vw;
+       height: 100vh;
+    }
+
+    .dinamico li{
+        margin: 0;
+    }
+    
+    img#eu{
+        width: 80px;
+        height: 80px;
+        margin-top:100%;
+    }
+}

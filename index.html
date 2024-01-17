@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+ <div class="box">
+
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar-bg">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon navbar-toggler-icon-custom" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="/pagina-adicionais/sobre.html">Sobre</a>
+              <a class="nav-link" href="/pagina-adicionais/hab.html">Habilidades</a>
+              <a class="nav-link" href="/pagina-adicionais/projetos.html">Projetos</a>
+              <a class="nav-link" href="/pagina-adicionais/contato.html">Contato</a>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="background">
+
+      <div class="flexbox">
+
+    <div class="container h-100">
+
+      <div class="row">
+                
+
+        <div class="col-xs-12 col-md-4" id="conteudoimg">
+        <p>Olá, eu sou</p>
+        <h1>Ana Patricia</h1>
+        <p>18 anos</p>
+            <p id="desenvolvedora">Desenvolvedora web</p>
+
+            <p id="frase">Transforme grandes desafios em oportunidades, assim, poderá alcançar resultados extraordinários com o fruto do deu esforço e dedicação.</p>
+       
+            
+        </div>
+
+        
+        
+        <div class="col-xs-12 col-md-4" id="div2">
+          <img src="imagens/IMG_20220202_202819_449.jpg" alt="" srcset="" id="eu">
+      </div>
+    
+
+        </div></div></div></div></div>
+        <footer>
+          <div class="mover-palavras" id="moverPalavras">
+          </div>
+
+          <script>
+            const moverPalavras = document.getElementById('moverPalavras')
+            const palavrasArray = ['Ana Patrícia', 'Desenvolvedora','Front-end'];
+
+            //Duplicar palavras
+
+            function duplicaPalavras(){
+              const repeticoes = 5;
+
+              for (let i = 0; i< repeticoes; i++){
+                palavrasArray.forEach(word =>
+              {
+                const span = document.createElement('span');
+                span.textContent = word; moverPalavras.appendChild(span);
+              
+                const espaco = document.createElement('span');
+                espaco.textContent =''
+                moverPalavras.appendChild(espaco);
+              });
+            }
+          }
+
+          duplicaPalavras();
+            
+          </script>
+        </footer> 
+</body>
+</html>
